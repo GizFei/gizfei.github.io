@@ -1,6 +1,13 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg" version="1.1" width="256" height="256" viewbox="0 0 949 256">
-    <path fill="#2366d1" d="M110.85125168440814 128L221.70250336881628 192L110.85125168440814 256L0 192Z"/>
-    <path fill="#609dff" d="M110.85125168440814 64L221.70250336881628 128L110.85125168440814 192L0 128Z"/>
-    <path fill="#a4c7ff" d="M110.85125168440814 0L221.70250336881628 64L110.85125168440814 128L0 64Z"/>
+<svg width="110" height="110" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <polygon id="svg_3" fill="#CFD3D4" points="49.67,76.33 43,83 43,73   "/>
+  <polygon id="svg_4" fill="#25b7d3" points="87,27 65,84 43,73 43,83 35,67 23,59   "/>
+  <polygon id="svg_5" fill="#0c9bb5" points="35,67 43,83 43,73 87,27   "/>
+ </g>
 </svg>

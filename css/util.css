@@ -1,0 +1,167 @@
+:root{
+    --light-gray: #f8f8f8;
+    --black: #4a4a4a;
+}
+/* 字体大小 */
+.font-1x{
+    font-size: 0.5rem;
+}
+.font-2x{
+    font-size: 0.75rem;
+}
+.font-2-5x{
+    font-size: 0.88rem;
+}
+.font-3x{
+    font-size: 1rem;
+}
+.font-4x{
+    font-size: 1.5rem;
+}
+.font-5x{
+    font-size: 2rem;
+}
+.bold{
+    font-weight: bold;
+}
+/* 字体大小 -- END */
+
+/* 容器 */
+.container{
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+@media screen and (min-width: 1088px){
+    .container{
+        max-width: 960px;
+        width: 960px;
+    }
+}
+@media screen and (min-width: 1280px){
+    .container{
+        max-width: 1152px;
+        width: 1152px;
+    }
+}
+@media screen and (min-width: 1472px){
+    .container{
+        max-width: 1344px;
+        width: 1344px;
+    }
+}
+/* 容器 -- END */
+
+/* 超链接 */
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+a.a-btn i{
+    transition: all 0.3s;
+}
+a:hover{
+    background-color: var(--light-gray);
+    color: var(--primary);
+}
+/* 正常的链接 */
+a.a-normal:hover{
+    background-color: transparent;
+}
+/* 作为按钮的标签 */
+a.a-btn:hover{
+    background-color: transparent;
+}
+a.a-btn:hover i{
+    color: var(--black);
+    transform: scale(1.16);
+    transition: all 0.3s;
+}
+/* 超链接 -- END */
+
+/* level */
+.level{
+    align-items: center;
+    justify-content: space-between;
+}
+.level-item{
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+.level.is-mobile{
+    display: flex;
+}
+.level.is-mobile .level-left,
+.level.is-mobile .level-right{
+    display: flex;
+}
+.level-left, .level-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.level-left{
+    align-items: center;
+    justify-content: flex-start;
+}
+.level .title{
+    margin-bottom: 0;
+}
+@media screen and (min-width: 768px){
+    .level{
+        display: flex;
+    }
+    .level > .level-item:not(.is-narrow){
+        flex-grow: 1;
+    }
+}
+/* level -- END */
+
+/* 圆角 */
+.rounded-4{
+    border-radius: 4px;
+}
+.rounded-6{
+    border-radius: 6px;
+}
+.rounded-8 {
+    border-radius: 8px;
+}
+/* 浅阴影 */
+.light-shadow {
+    box-shadow: 0 0 36px 0 rgba(154, 161, 171, .20);
+     !important
+}
+/* 深阴影 */
+.dark-shadow{
+    box-shadow: 0 0 30px 6px rgba(31, 51, 73, 0.10) !important;
+}
+/* 圆角与阴影 -- END */
+
+.heading{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "open sans";
+    font-weight: bold;
+}
+.title{
+    color: #363636;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+
+
+
+
+
+
+
