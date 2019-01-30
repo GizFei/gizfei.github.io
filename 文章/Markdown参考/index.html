@@ -1,0 +1,369 @@
+<!-- - pageTitle += ' [ ' + config.title + ' ]'--><!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><title>Markdown参考</title><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/mdb.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/styles/atom-one-light.css"><link rel="stylesheet" href="/css/gizmarkdown.css"><link rel="stylesheet" href="/css/newtheme.css"><link rel="stylesheet" href="/css/util.css"></head><body><nav class="navbar navbar-main mb-3"><div class="container"><div class="navbar-brand"><a href="/"><img src="/images/logo.png" alt="清夕的小屋" height="36"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/contact">联系</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" title="访问我的Github" href="https://github.com/gizfei"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><!--#menu-outer//nav#menu-inner
+  //each url, label in theme.menu
+    //a(href=url)= label--><!--#content-outer//#content-inner
+  //if body
+    //div!= body
+  //else--><!-- 完整的文章--><!-- page指的是"Document"--><div class="container"><div class="row mt-4 mb-5"><div class="col-3"><div class="card widget light-shadow"><div class="card-body"><nav class="level mb-2"><div class="level-item text-center"><div><img class="rounded-circle" height="112" width="112" src="/images/avatar.png" alt="GizAvatar"><p class="block font-4x my-1">清夕（Giz）</p><p class="font-2x mb-2">愿挥毫方寸，仍有诗情万里。</p></div></div></nav><nav class="level is-mobile mb-2"><div class="level-item text-center m-0"><div><p class="heading">文章</p><p class="title">7</p></div></div><div class="level-item text-center m-0"><div><p class="heading">类别</p><p class="title">6</p></div></div><div class="level-item text-center m-0"><div><p class="heading">标签</p><p class="title">6</p></div></div></nav></div></div></div><div class="col-9"><div class="card rounded-8 light-shadow full-article"><div class="view overlay rounded-8"></div><div class="card-body article"><div class="level font-2-5x article-meta is-mobile"><div class="level-left"><time class="level-item grey-text mr-3" datetime="2019-01-30T11:52:41.000Z">2019-1-30 19:52:41</time><span class="level-item grey-text">约46分钟读完 （4558词）</span></div></div><h1 class="title mt-3 mb-3" style="font-weight: 600">Markdown参考</h1><div class="content font-3x"><h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><p>Outline</p>
+<p>[TOC]</p>
+<h2 id="Block-Elements"><a href="#Block-Elements" class="headerlink" title="Block Elements"></a>Block Elements</h2><h3 id="Paragraph-and-line-breaks"><a href="#Paragraph-and-line-breaks" class="headerlink" title="Paragraph and line breaks"></a>Paragraph and line breaks</h3><p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press <code>Return</code> to create a new paragraph.</p>
+<p>Press <code>Shift</code> + <code>Return</code> to create a single line break. However, most markdown parser will ignore single line break, to make other markdown parsers recognize your line break, you can leave two whitespace at the end of the line, or insert <code>&lt;br/&gt;</code>.</p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
+<p>这是一段引用，可以查看它的样式。</p>
+</blockquote>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>Input <code>* list item 1</code> will create an un-ordered list, the <code>*</code> symbol can be replace with <code>+</code> or <code>-</code>. </p>
+<p>Input <code>1. list item 1</code> will create an ordered list, their markdown source code is like:</p>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2</li>
+</ul>
+<ol>
+<li>有序列表1</li>
+<li>有序列表2</li>
+</ol>
+<h3 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h3><ul>
+<li style="list-style: none"><input type="checkbox"> 任务1</li>
+<li style="list-style: none"><input type="checkbox"> 任务2</li>
+<li style="list-style: none"><input type="checkbox" checked> 完成任务3</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>Using fences is easy: Input ``` and press <code>return</code>. Add an optional language identifier after ``` and we’ll run it through syntax highlighting</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> random<br>r = random.random()<br>print(r)<br></code></pre></td></tr></table></figure>
+<h3 id="公式块"><a href="#公式块" class="headerlink" title="公式块"></a>公式块</h3><p>You can render <em>LaTeX</em> mathematical expressions using <strong>MathJax</strong>.</p>
+<p>Input <code>$$</code>, then press ‘Return’ key will trigger an input field which accept <em>Tex/LaTex</em> source. Following is an example:<br>$$<br>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br>\end{vmatrix}<br>$$<br>In markdown source file, math block is <em>LaTeX</em> expression wrapped by ‘$$’ mark:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$$<br>\mathbf&#123;V&#125;<span class="hljs-emphasis">_1 \times \mathbf&#123;V&#125;_</span>2 =  \begin&#123;vmatrix&#125; <br>\mathbf&#123;i&#125; &amp; \mathbf&#123;j&#125; &amp; \mathbf&#123;k&#125; \\<br>\frac&#123;\partial X&#125;&#123;\partial u&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial u&#125; &amp; 0 \\<br>\frac&#123;\partial X&#125;&#123;\partial v&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial v&#125; &amp; 0 \\<br>\end&#123;vmatrix&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<p>行内公公式：$y_i = x(a_i)^2$。</p>
+<ul>
+<li>矩阵</li>
+</ul>
+<p>$$<br>\left[<br>\begin{matrix}<br>1 &amp; 2 &amp; 3 \<br>4 &amp; 5 &amp; 6 \<br>7 &amp; 8 &amp; 9<br>\end{matrix}<br>\right]<br>\left{<br>\begin{matrix}<br>1 &amp; 2 &amp; 3 \<br>4 &amp; 5 &amp; 6 \<br>7 &amp; 8 &amp; 9<br>\end{matrix}<br>\right}<br>$$</p>
+<ul>
+<li>希腊字母表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>大写</th>
+<th>Markdown</th>
+<th>小写</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>A</td>
+<td>$\alpha$</td>
+<td>\alpha</td>
+</tr>
+<tr>
+<td>B</td>
+<td>B</td>
+<td>$\beta$</td>
+<td>\beta</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>\Gamma</td>
+<td>$\gamma$</td>
+<td>\gamma</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>\Delta</td>
+<td>$\delta$</td>
+<td>\delta</td>
+</tr>
+<tr>
+<td>E</td>
+<td>E</td>
+<td>$\epsilon$</td>
+<td>\epsilon</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>$\varepsilon$</td>
+<td>\varepsilon</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Z</td>
+<td>$\zeta$</td>
+<td>\zeta</td>
+</tr>
+<tr>
+<td>H</td>
+<td>H</td>
+<td>$\eta$</td>
+<td>\eta</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>\Theta</td>
+<td>$\theta$</td>
+<td>\theta</td>
+</tr>
+<tr>
+<td>I</td>
+<td>I</td>
+<td>$\iota$</td>
+<td>\iota</td>
+</tr>
+<tr>
+<td>K</td>
+<td>K</td>
+<td>$\kappa$</td>
+<td>\kappa</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>\Lambda</td>
+<td>$\lambda$</td>
+<td>\lambda</td>
+</tr>
+<tr>
+<td>M</td>
+<td>M</td>
+<td>$\mu$</td>
+<td>\mu</td>
+</tr>
+<tr>
+<td>N</td>
+<td>N</td>
+<td>$\nu$</td>
+<td>\nu</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>\Xi</td>
+<td>$\xi$</td>
+<td>\xi</td>
+</tr>
+<tr>
+<td>O</td>
+<td>O</td>
+<td>$\omicron$</td>
+<td>\omicron</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>\Pi</td>
+<td>$\pi$</td>
+<td>\pi</td>
+</tr>
+<tr>
+<td>P</td>
+<td>P</td>
+<td>$\rho$</td>
+<td>\rho</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>\Sigma</td>
+<td>$\sigma$</td>
+<td>\sigma</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>$\tau$</td>
+<td>\tau</td>
+</tr>
+<tr>
+<td>$\Upsilon$</td>
+<td>\Upsilon</td>
+<td>$\upsilon$</td>
+<td>\upsilon</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>\Phi</td>
+<td>$\phi$</td>
+<td>\phi</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>$\varphi$</td>
+<td>\varphi</td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td>$\chi$</td>
+<td>\chi</td>
+</tr>
+<tr>
+<td>$\Psi$</td>
+<td>\Psi</td>
+<td>$\psi$</td>
+<td>\psi</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>\Omega</td>
+<td>$\omega$</td>
+<td>\omega</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>三角函数：$\sin$</li>
+<li>对数函数：$\ln \log_2 \lg$</li>
+<li>关系运算符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>Markdown</th>
+<th>运算符</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pm$</td>
+<td>\pm</td>
+<td>$\times$</td>
+<td>\</td>
+</tr>
+<tr>
+<td>$\div$</td>
+<td>\div</td>
+<td>$\sum$</td>
+<td>\sum</td>
+</tr>
+<tr>
+<td>$\prod$</td>
+<td>\prod</td>
+<td>$\neq$</td>
+<td>\neq</td>
+</tr>
+<tr>
+<td>$\leq$</td>
+<td>\leq</td>
+<td>$\geq$</td>
+<td>\geq</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>\approx</td>
+<td>$\approxeq$</td>
+<td>\approxeq</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>其他</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>Markdown</th>
+<th>符号</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{1}{2}$</td>
+<td>\frac{1}{2}</td>
+<td>$\sqrt{2}$</td>
+<td>\sqrt</td>
+</tr>
+<tr>
+<td>$\cdot$</td>
+<td>\cdot</td>
+<td>$\cdots$</td>
+<td>\cdots</td>
+</tr>
+<tr>
+<td>$\overline{X}$</td>
+<td>\overline{X}</td>
+<td>$\underline{y}$</td>
+<td>\underline{y}</td>
+</tr>
+<tr>
+<td>$\infty$</td>
+<td>\infty</td>
+<td>$\vec{a}$</td>
+<td>\vec{a}</td>
+</tr>
+<tr>
+<td>$\int$</td>
+<td>\int</td>
+<td>$\rightarrow$</td>
+<td>\rightarrow</td>
+</tr>
+<tr>
+<td>$\partial$</td>
+<td>\partial</td>
+<td>$\nabla$</td>
+<td>\nabla</td>
+</tr>
+<tr>
+<td>$\mathbf{E}$</td>
+<td>\mathbf{E}</td>
+<td>$\mathrm{E}$</td>
+<td>\mathbf{E}</td>
+</tr>
+<tr>
+<td>$\in$</td>
+<td>\in</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>Input <code>| First Header  | Second Header |</code> and press <code>return</code> key will create a table with two column.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">表格头1</th>
+<th style="text-align:left">表格头2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">内容格1</td>
+<td style="text-align:left">内容格2</td>
+</tr>
+<tr>
+<td style="text-align:left">偶数行1</td>
+<td style="text-align:left">偶数行2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>[^footnote]: Here is the text of footnote.</p>
+<h3 id="水平分割线"><a href="#水平分割线" class="headerlink" title="水平分割线"></a>水平分割线</h3><hr>
+<h3 id="YAML-Front-Matter"><a href="#YAML-Front-Matter" class="headerlink" title="YAML Front Matter"></a>YAML Front Matter</h3><h3 id="Table-of-Contents-TOC"><a href="#Table-of-Contents-TOC" class="headerlink" title="Table of Contents (TOC)"></a>Table of Contents (TOC)</h3><p>Input <code>[toc]</code> then press <code>Return</code> key will create a section for “Table of Contents” extracting all headers from one’s writing, its contents will be updated automatically. </p>
+<h2 id="Span-Elements"><a href="#Span-Elements" class="headerlink" title="Span Elements"></a>Span Elements</h2><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a href="具体地址">链接</a></p>
+<h4 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h4><p><strong>You can set the href to headers</strong>. <code>Ctrl</code> + <code>点击</code>跳转</p>
+<p><a href="#代码块">跳转到代码块标题</a></p>
+<h4 id="引用链接"><a href="#引用链接" class="headerlink" title="引用链接"></a>引用链接</h4><p><a href="http://google.com" title="Google搜索" target="_blank" rel="noopener">Google</a></p>
+<p>id为Google的链接定义在下面</p>
+<h3 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h3><p>&lt;<a href="http://www.google.com&gt;" target="_blank" rel="noopener">www.google.com&gt;</a></p>
+<p><a href="mailto:&#x69;&#64;&#x74;&#x79;&#112;&#111;&#114;&#97;&#46;&#105;&#111;" target="_blank" rel="noopener">&#x69;&#64;&#x74;&#x79;&#112;&#111;&#114;&#97;&#46;&#105;&#111;</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><h3 id="强调（-lt-em-gt-）"><a href="#强调（-lt-em-gt-）" class="headerlink" title="强调（&lt;em&gt;）"></a>强调（<code>&lt;em&gt;</code>）</h3><p><em>强调</em></p>
+<h3 id="加粗（-lt-strong-gt-）"><a href="#加粗（-lt-strong-gt-）" class="headerlink" title="加粗（&lt;strong&gt;）"></a>加粗（<code>&lt;strong&gt;</code>）</h3><p><strong>加粗</strong></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p><del>Mistaken</del></p>
+<h3 id="下划线（-lt-u-gt-）"><a href="#下划线（-lt-u-gt-）" class="headerlink" title="下划线（&lt;u&gt;）"></a>下划线（<code>&lt;u&gt;</code>）</h3><p><u>Underline</u></p>
+<h3 id="Emoji-smile"><a href="#Emoji-smile" class="headerlink" title="Emoji:smile:"></a>Emoji:smile:</h3><p>:smile:</p>
+<p><a href="https://gist.github.com/rxaviers/7360908" target="_blank" rel="noopener">Github Emoji</a></p>
+<h3 id="行内公式"><a href="#行内公式" class="headerlink" title="行内公式"></a>行内公式</h3><p>$\lim_{x\to \infty}\exp(-x) = 0$</p>
+<h3 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h3><p>==高亮==</p>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>You could use HTML to style content what pure Markdown does not support, for example, use <code>&lt;span style=&quot;color:red&quot;&gt;this text is red&lt;/span&gt;</code> to add text with red color.</p>
+<h3 id="Embed-Contents"><a href="#Embed-Contents" class="headerlink" title="Embed Contents"></a>Embed Contents</h3><p>Some websites provide iframe-based embed code which you could also paste into Typora, for example:</p>
+<figure class="highlight Markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Markdown">&lt;iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;&lt;/iframe&gt;<br></code></pre></td></tr></table></figure>
+<h3 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h3><p>You could use the <code>&lt;video&gt;</code> HTML tag to embed videos, for example:</p>
+<figure class="highlight Markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Markdown">&lt;video src="xxx.mp4" /&gt;<br></code></pre></td></tr></table></figure>
+<h3 id="Other-HTML-Support"><a href="#Other-HTML-Support" class="headerlink" title="Other HTML Support"></a>Other HTML Support</h3><p>You could find details <a href="http://support.typora.io/HTML/" target="_blank" rel="noopener">here</a>.</p>
+</div></div></div></div></div></div><!--article#post//h1= page.title
+//!= page.content--><!--#paginator!= paginator()--><footer class="footer mt-3"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo mb-2" href="/"><img src="/images/logo.png" alt="GizBlog" height="32"></a><p class="font-2x bold mb-0">© 2019 
+Powered by <a href="http://hexo.io/" target="_blank"><span style="color: var(--primary)">Hexo</span></a> & <a href="http://github.com/gizfei"><span style="color: var(--primary)">Giz</span></a></p></div><div class="level-end"><div class="field"><p class="control"><a class="a-btn" target="_blank" title="" href="/"><i class="fab fa-github"></i></a></p><p class="control"><a class="a-btn" target="_blank" title="" href="/"><i class="fab fa-weibo"></i></a></p><p class="control"><a class="a-btn" target="_blank" title="" href="/"><i class="fab fa-qq"></i></a></p></div></div></div></div></footer><script src="/js/jquery-3.3.1.min.js"></script><script src="/js/popper.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/mdb.min.js"></script><script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script><script src="/js/pace.min.js"></script><script src="/js/animation.js"></script><script src="/js/newtheme.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>

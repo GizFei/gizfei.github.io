@@ -324,3 +324,136 @@ footer .level-end .field .control{
     border-radius: 4px;
 }
 /* 标签云tagcloud -- END */
+
+/* 完整文章full-article */
+.full-article .content a{
+    color: var(--primary);
+}
+/* 完整文章full-article -- END */
+
+/* 代码块区域 */
+figure.highlight{
+    padding: 0;
+    font-family: "Consolas";
+    background: #f1f2f3;
+    border-radius: 4px;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+}
+figure.highlight table{
+    width: auto;
+}
+figure.highlight tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+figure.highlight tr{
+    display: table-row;
+    vertical-align: inherit;
+}
+figure.highlight pre{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+figure.highlight .gutter{
+    background: #dedede;
+    text-align: right;
+    padding: 0.25rem 0.5rem;
+}
+figure.highlight .code pre{
+    padding: 0 0.75rem;
+}
+figure.highlight .hljs{
+    background-color: transparent;
+    padding: 0;
+}
+/* 代码块区域 -- END */
+
+/* 页面加载进度条pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: var(--primary);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+/* 页面加载进度条pace -- END */
+
+/* 分页器paginator */
+.paginator{
+/*    justify-content: space-between;*/
+    align-items: center;
+/*    display: flex;*/
+    text-align: center;
+    font-size: 1rem;
+    margin: 1em 0;
+}
+.paginator .prev, .paginator .next{
+    box-shadow: 0 4px 8px rgba(0,0,0,.08);
+    background-color: white;
+    border: none;
+    padding: 0.2rem 0.75rem;
+    white-space: nowrap;
+    color: var(--black);
+    min-width: 2.25em;
+    justify-content: center;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 4px;
+    align-items: center;
+    display: inline-flex;
+    font-weight: 500;
+}
+.paginator .prev{
+    order: 1;
+    margin-right: 0.75rem;
+}
+.paginator .next{
+    order: 3;
+    margin-left: 0.75rem;
+}
+.paginator span.current, .paginator a.page-number{
+    box-shadow: 0 4px 8px rgba(0,0,0,.08);
+    font-size: 1em;
+    height: 2em;
+    padding: 0.2rem 0.75rem;
+    background: white;
+    display: inline-flex;
+    min-width: 2em;
+    border-radius: 4px;
+    font-weight: 500;
+    order: 2;
+    margin: 0 0.25em;
+    align-items: center;
+    justify-content: center;
+}
+.paginator span.current{
+    background-color: var(--primary);
+    color: white;
+}
+.paginator .prev:hover{
+    background-color: var(--light-gray);
+}
+.paginator a.page-number:hover{
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+/* 分页器paginator -- END*/
+
+
+
