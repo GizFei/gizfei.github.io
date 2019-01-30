@@ -46,12 +46,12 @@
     transform: scale(1.04);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -59,62 +59,62 @@ h6 {
     line-height: 1.4;
     cursor: text;
 }
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
+.content h1:hover a.anchor,
+.content h2:hover a.anchor,
+.content h3:hover a.anchor,
+.content h4:hover a.anchor,
+.content h5:hover a.anchor,
+.content h6:hover a.anchor {
     /*background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;*/
     text-decoration: none;
 }
-h1 tt,
-h1 code {
+.content h1 tt,
+.content h1 code {
     font-size: inherit;
 }
-h2 tt,
-h2 code {
+.content h2 tt,
+.content h2 code {
     font-size: inherit;
 }
-h3 tt,
-h3 code {
+.content h3 tt,
+.content h3 code {
     font-size: inherit;
 }
-h4 tt,
-h4 code {
+.content h4 tt,
+.content h4 code {
     font-size: inherit;
 }
-h5 tt,
-h5 code {
+.content h5 tt,
+.content h5 code {
     font-size: inherit;
 }
-h6 tt,
-h6 code {
+.content h6 tt,
+.content h6 code {
     font-size: inherit;
 }
-h1 {
+.content h1 {
     padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
-h2 {
+.content h2 {
    padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
-h3 {
+.content h3 {
     font-size: 1.5em;
     line-height: 1.43;
 }
-h4 {
+.content h4 {
     font-size: 1.25em;
 }
-h5 {
+.content h5 {
     font-size: 1em;
 }
-h6 {
+.content h6 {
    font-size: 1em;
     color: #777;
 }
@@ -291,19 +291,19 @@ tt {
     background: #fafafa;
 }
 
-#write>h3.md-focus:before{
+#write>.content h3.md-focus:before{
     left: -1.5625rem;
     top: .375rem;
 }
-#write>h4.md-focus:before{
+#write>.content h4.md-focus:before{
     left: -1.5625rem;
     top: .285714286rem;
 }
-#write>h5.md-focus:before{
+#write>.content h5.md-focus:before{
     left: -1.5625rem;
     top: .285714286rem;
 }
-#write>h6.md-focus:before{
+#write>.content h6.md-focus:before{
     left: -1.5625rem;
     top: .285714286rem;
 }
@@ -387,24 +387,15 @@ header, .context-menu, .megamenu-content, footer{
     font-weight: 500;
 }
 
-h1,h2,h3,h4,h5,h6{
+.content h1,.content h2,.content h3,.content h4,.content h5,.content h6{
     transition: all 0.3s;
 }
-h1:hover,
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover,
-h6:hover{
+.content h1:hover,
+.content h2:hover,
+.content h3:hover,
+.content h4:hover,
+.content h5:hover,
+.content h6:hover{
     transform: scale(1.02);
     transition: all 0.3s;
-}
-
-/* 一体化侧栏菜单 */
-#megamenu-menu-list a{
-    width: auto;
-}
-
-#context-menu a[role='menuitem']{
-    width: auto;
 }
