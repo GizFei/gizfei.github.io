@@ -32,22 +32,33 @@
     position: relative;
     padding: 0;
 }
-@media screen and (min-width: 1088px){
+@media screen and (min-width: 992px){
     .container{
-        max-width: 960px;
-        width: 960px;
+        max-width: 880px;
+        width: 880px;
     }
 }
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1200px){
     .container{
-        max-width: 1152px;
-        width: 1152px;
+        max-width: 1080px;
+        width: 1080px;
     }
 }
 @media screen and (min-width: 1472px){
-    .container{
-        max-width: 1344px;
-        width: 1344px;
+    .container, .container-fluid{
+        max-width: 1400px;
+        width: 14000px;
+    }
+}
+.container-fluid{
+    padding: 0 48px;
+}
+@media (max-width: 768px){
+    .navbar > .container{
+        display: block;
+    }
+    .container-fluid{
+        padding: 0 24px;
     }
 }
 /* 容器 -- END */

@@ -15,14 +15,18 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 .navbar-main .navbar-menu,
-.navbar-start,
-.navbar-end {
+.navbar-main .navbar-start,
+.navbar-main .navbar-end {
     align-items: stretch;
     display: flex;
     padding: 0;
 }
 .navbar-main .navbar-brand{
     padding: 0;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.25rem;
 }
 .navbar-main .navbar-menu {
     flex-grow: 1;
@@ -50,7 +54,7 @@ body {
     border-top: 1.5px solid var(--primary);
     background-color: transparent;
 }
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 768px) {
     .navbar-main .navbar-menu,
     .navbar-brand {
         justify-content: center;
@@ -64,18 +68,6 @@ body {
         margin-left: 0;
     }
 }
-
-/*@media screen and (max-width: 768px){
-    .navbar-main .navbar-menu, .navbar-brand{
-        justify-content: center;
-    }
-    .navbar-main .navbar-start{
-        margin-right: 0;
-    }
-    .navbar-main .navbar-end{
-        margin-left: 0;
-    }
-}*/
 /* 导航栏navbar -- END */
 
 /* 底栏footer*/
@@ -166,12 +158,21 @@ footer .level-end .field .control{
     align-items: flex-start;
     display: flex;
     text-align: left;
+/*    margin: 2px;*/
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: 0.3s ease box-shadow;
+}
+.recent-posts .media:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,.08);
+    transition: 0.3s ease box-shadow;
 }
 .recent-posts .media-left{
     box-shadow: none!important;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
+    padding-bottom: 0;
 }
 .recent-posts .media-content{
     flex-basis: auto;
@@ -320,7 +321,7 @@ footer .level-end .field .control{
 
 /* 标签云tagcloud */
 .tagcloud a{
-    padding: 0 0.25rem;
+/*    padding: 0 0.25rem;*/
     border-radius: 4px;
 }
 /* 标签云tagcloud -- END */
@@ -455,5 +456,117 @@ figure.highlight .hljs{
 }
 /* 分页器paginator -- END*/
 
+/* 回到顶部按钮 */
+a#back-to-top{
+    position: fixed;
+    bottom: 24px;
+    right: 96px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,.08);
+    border-radius: 4px;
+    width: 48px;
+    height: 36px;
+    display: inline-flex;
+    opacity: 0;
+    align-items: center;
+    transition: .4s ease opacity,.4s ease width,.4s ease transform,.4s ease border-radius;
+}
+a#back-to-top i{
+    margin: 0 auto;
+    font-size: 20px;
+}
+a#back-to-top:hover{
+    background-color: var(--light-gray);
+}
+/* 回到顶部按钮 -- END */
+
+/* Archive页面中timeline中的media */
+.year-archive .tag{
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 0.8rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+.year-archive:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.timeline{
+    border-left: 1px solid #dbdbdb;
+    padding-left: 1.75rem;
+    margin-left: 1.25rem;
+    padding-top: 1rem;
+}
+.timeline .media{
+    margin-bottom: 0.75rem;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.timeline .media::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #CCC;
+    position: absolute;
+    display: block;
+    left: calc(-1.75rem - 5.5px);
+}
+.timeline .media-left{
+    box-shadow: none!important;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-bottom: 0;
+}
+.timeline .media-content{
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+.timeline .thumbnail{
+    width: 72px;
+    height: 72px;
+/*    box-shadow: none!important;*/
+    object-fit: cover;
+}
+/* Archive页面中的media -- END */
+
+/* 首页index的三栏 */
+.col-left-right{
+    display: none;
+}
+@media (max-width: 1200px){
+    .index .col-right{
+        display: none;
+    }
+    .index .col-left-right{
+        display: block;
+    }
+}
+@media (max-width: 768px){
+    .index .col-left{
+        order: 2;
+    }
+    .index .col-middle{
+        order: 1;
+    }
+    .index .col-right{
+        order: 3;
+    }
+}
+/* 首页index的三栏 -- END */
 
 
