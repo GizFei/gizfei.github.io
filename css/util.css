@@ -2,6 +2,17 @@
     --light-gray: #f8f8f8;
     --black: #4a4a4a;
 }
+@font-face{
+    font-family: "HanYiYanKai";
+    src: url('/font/HanYiYanKaiW.ttf') format('truetype');
+}
+@font-face{
+    font-family: "WenDingTeYanKai";
+    src: url('/font/WenDingTeYanKai-2.ttf') format('truetype');
+}
+body, a, h1, h2, h3, h4, h5, h6, p{
+    font-family: "WenDingTeYanKai"!important;
+}
 /* 字体大小 */
 .font-1x{
     font-size: 0.5rem;
@@ -99,7 +110,7 @@ a.a-btn:hover i{
     align-items: center;
     display: flex;
     flex-basis: auto;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     justify-content: center;
 }
