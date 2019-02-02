@@ -11,7 +11,7 @@
     src: url('/font/WenDingTeYanKai-2.ttf') format('truetype');
 }
 body, a, h1, h2, h3, h4, h5, h6, p{
-    font-family: "WenDingTeYanKai"!important;
+    font-family: "WenDingTeYanKai", "Microsoft YaHei"!important;
 }
 /* 字体大小 */
 .font-1x{
@@ -25,6 +25,9 @@ body, a, h1, h2, h3, h4, h5, h6, p{
 }
 .font-3x{
     font-size: 1rem;
+}
+.font-3-5x{
+    font-size: 1.08rem;
 }
 .font-4x{
     font-size: 1.5rem;
