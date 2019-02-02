@@ -6,7 +6,7 @@ Hello，这是我通过Hexo搭建的个人博客。
 
 #### 技术细节
 
-1. 评论系统 ：[Valine](https://valine.js.org/)
+1. 评论系统：[Valine](https://valine.js.org/)
 
 2. 博客加密：[hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
