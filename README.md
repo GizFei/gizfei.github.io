@@ -45,4 +45,4 @@ Hello，这是我通过Hexo搭建的个人博客。
 
 7. 字体：[文鼎特颜楷](http://www.fonts.net.cn/font-35371272269.html)
 
-   > 但是由于字体文件过大，导致页面加载速度慢，所以只好换成“华文中宋”了。
+8. 字体压缩：[Font-Spider](http://font-spider.org)

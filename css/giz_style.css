@@ -467,7 +467,9 @@ figure.highlight .hljs{
 .paginator .prev:hover{
     background-color: var(--light-gray);
 }
-.paginator a.page-number:hover{
+.paginator a.page-number:hover, 
+.paginator .next:hover, 
+.paginator .prev:hover{
     background-color: var(--light-gray);
     color: var(--black);
 }
