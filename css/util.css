@@ -145,6 +145,15 @@ a.a-btn:hover i{
         flex-grow: 1;
     }
 }
+@media screen and (max-width: 576px){
+    .level.is-mobile .level-left,
+    .level.is-mobile .level-right{
+        display: block;
+    }
+    .level-item{
+        justify-content: normal;
+    }
+}
 /* level -- END */
 
 /* 圆角 */
