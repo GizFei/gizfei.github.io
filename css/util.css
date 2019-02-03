@@ -150,7 +150,7 @@ a.a-btn:hover i{
     .level.is-mobile .level-right{
         display: block;
     }
-    .level-item{
+    .article .level-item{
         justify-content: normal;
     }
 }

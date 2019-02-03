@@ -93,7 +93,8 @@ footer .level-start{
     vertical-align: top;
 }
 footer .level-end .field{
-    display: flex;
+    display: inline-flex;
+    align-items: center;
 }
 footer .level-end .field .control{
     margin: 0.6rem 1rem;
