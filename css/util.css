@@ -11,8 +11,8 @@
     src: url('/font/WenDingTeYanKai-2.ttf') format('truetype');
 }
 body, a, h1, h2, h3, h4, h5, h6, p, li, span{
-    font-family: "WenDingTeYanKai", "Microsoft YaHei"!important;
-    /*font-family: "Consolas", "STZhongSong", "Microsoft YaHei"!important;*/
+    /*font-family: "WenDingTeYanKai", "Microsoft YaHei"!important;*/
+    font-family: "Consolas", "STZhongSong", "Microsoft YaHei"!important;
 }
 /* 字体大小 */
 .font-1x{
