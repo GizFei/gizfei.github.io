@@ -34,8 +34,8 @@
     font-weight: 520;
     text-decoration: none;
     padding: 0 2px;
-    display: block;
-    position: relative;
+/*    display: block;
+*/  position: relative;
     width: fit-content;
     transition: all 0.3s;
 }
